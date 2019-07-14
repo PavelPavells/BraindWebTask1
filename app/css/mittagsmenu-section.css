@@ -1,0 +1,154 @@
+.mittagsmenu-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  background-color: #fff; }
+
+.mittagsmenu-dish-block_left, .mittagsmenu-dish-block_right {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 1002px;
+  margin-top: 60px; }
+  .mittagsmenu-dish-block_left .mittagsmenu-dish_information, .mittagsmenu-dish-block_right .mittagsmenu-dish_information {
+    position: relative;
+    width: 576px; }
+    .mittagsmenu-dish-block_left .mittagsmenu-dish_information .mittagsmenu-dish_images_angle, .mittagsmenu-dish-block_right .mittagsmenu-dish_information .mittagsmenu-dish_images_angle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      max-width: 450px;
+      width: 449px;
+      height: 235px;
+      background: linear-gradient(-45deg, #fff, 250px, transparent 0); }
+    .mittagsmenu-dish-block_left .mittagsmenu-dish_information .mittagsmenu-dish_about, .mittagsmenu-dish-block_right .mittagsmenu-dish_information .mittagsmenu-dish_about {
+      position: absolute;
+      right: 50px;
+      bottom: -4px;
+      text-align: right; }
+      .mittagsmenu-dish-block_left .mittagsmenu-dish_information .mittagsmenu-dish_about .mittagsmenu-dish_description, .mittagsmenu-dish-block_right .mittagsmenu-dish_information .mittagsmenu-dish_about .mittagsmenu-dish_description {
+        color: #28272a;
+        font-family: 'GFS Didot', serif;
+        font-size: 31px;
+        line-height: 31px;
+        font-style: italic; }
+      .mittagsmenu-dish-block_left .mittagsmenu-dish_information .mittagsmenu-dish_about .mittagsmenu-dish_text, .mittagsmenu-dish-block_right .mittagsmenu-dish_information .mittagsmenu-dish_about .mittagsmenu-dish_text {
+        margin: 33px 0 15px;
+        color: #28272a;
+        font-family: 'Raleway', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21.42px; }
+  .mittagsmenu-dish-block_left .mittagsmenu-dish_cap, .mittagsmenu-dish-block_right .mittagsmenu-dish_cap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    position: relative;
+    margin-right: 153px; }
+    .mittagsmenu-dish-block_left .mittagsmenu-dish_cap .mittagsmenu-dish_price, .mittagsmenu-dish-block_right .mittagsmenu-dish_cap .mittagsmenu-dish_price {
+      position: absolute;
+      width: 136px;
+      text-align: center;
+      color: #282729;
+      font-family: 'GFS Didot', serif;
+      font-size: 24px;
+      font-style: italic;
+      line-height: 11.77px; }
+
+.mittagsmenu-dish-block_right .mittagsmenu-dish_cap {
+  margin-left: 153px;
+  margin-right: 0; }
+
+.mittagsmenu-dish-block_right .mittagsmenu-dish_information {
+  width: 449px;
+  min-height: 247px; }
+  .mittagsmenu-dish-block_right .mittagsmenu-dish_information .mittagsmenu-dish_images {
+    position: absolute;
+    right: 0; }
+  .mittagsmenu-dish-block_right .mittagsmenu-dish_information .mittagsmenu-dish_images_angle {
+    position: absolute;
+    right: 0;
+    background: linear-gradient(45deg, #fff, 250px, transparent 0); }
+  .mittagsmenu-dish-block_right .mittagsmenu-dish_information .mittagsmenu-dish_about {
+    left: 0;
+    right: auto;
+    bottom: -4px;
+    text-align: left; }
+
+.mittagsmenu-time {
+  width: 435px;
+  margin-top: 73px; }
+  .mittagsmenu-time p {
+    color: #28272a;
+    text-align: center;
+    font-family: 'GFS Didot', serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 26.38px; }
+
+.aktionen-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 47px; }
+  .aktionen-section .aktionen-section_capture {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .aktionen-section .aktionen-section_capture .aktionen-section_capture_text {
+      margin: 0 19px;
+      color: #f2ab7f;
+      font-family: 'GFS Didot', serif;
+      font-style: italic;
+      font-size: 36px;
+      line-height: 39.42px; }
+  .aktionen-section .aktionen-section_content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-top: 45px; }
+    .aktionen-section .aktionen-section_content .aktionen-section_content_item {
+      padding: 10px 9px;
+      margin: 0 44px;
+      border: 1px solid #f3ae84; }
+  .aktionen-section .aktionen-pagination-section {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 24px 0 26px;
+    list-style: none; }
+    .aktionen-section .aktionen-pagination-section .aktionen-pagination-section_item {
+      margin: 0 8px; }
+      .aktionen-section .aktionen-pagination-section .aktionen-pagination-section_item .aktionen-pagination-section_link .square {
+        width: 8px;
+        height: 8px;
+        background-color: transparent; }
+      .aktionen-section .aktionen-pagination-section .aktionen-pagination-section_item .aktionen-pagination-section_link .frame {
+        padding: 2px;
+        height: 14px;
+        width: 14px;
+        background-color: transparent;
+        border: 1px solid #f2ab7f;
+        transform: rotate(45deg); }
+      .aktionen-section .aktionen-pagination-section .aktionen-pagination-section_item .aktionen-pagination-section_link:hover .square, .aktionen-section .aktionen-pagination-section .aktionen-pagination-section_item .active .square {
+        background-color: #f2ab7f; }

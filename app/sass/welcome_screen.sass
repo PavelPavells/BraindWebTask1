@@ -1,0 +1,82 @@
+.banner-section
+    position: relative;
+    margin-bottom: 50px;
+    width: 1255px;
+    height: 703px;
+    background: url("/images/banner_shadow.png") no-repeat center top;
+
+.banner-section_logo
+    position: absolute;
+    top: 72px;
+    left: 80px;
+    max-width: 211px;
+
+.banner-section_slider_wrapper
+    position: absolute;
+    top: 68px;
+    right: 110px;
+
+    .banner-section_slider_button
+        margin: 11px;
+        padding: 1px;
+        border: 0 solid #fff;
+
+    .active, .banner-section_slider_button:hover
+        margin: 10px;
+        border: 1px solid #fff;    
+
+.banner-section_brand_wrapper
+    position: absolute;
+    top: 128px;
+    left: 382px;
+    width: 500px;
+    height: 410px;
+    background: url("/images/branding_env.png") no-repeat;
+
+    .banner-section_welcome
+        margin-top: 204px;
+        color: #ffffff;
+        font-family: 'Raleway', Arial, sans-serif;
+        font-size: 62px;
+        font-weight: 800;
+        line-height: 39.42px;
+        text-transform: uppercase;
+    
+    .banner-section_telephone
+        @extend .banner-section_welcome;
+        margin-top: 10px;
+        margin-left: 105px;
+        font-size: 14px;
+
+.banner-section_navigation
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    .banner-section_navigation_menu
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        list-style: none;
+        bottom: 0;
+
+        .banner-section_navigation_menu_item
+            padding: 26px 64px;
+            border-right: 1px solid #d1d1ca;
+        
+        .banner-section_navigation_menu_item:first-child
+            border-left: 1px solid #d1d1ca;
+
+        .menu-value
+            color: #ffffff;
+            font-family: 'Raleway', Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+
+        .active, .banner-section_navigation_menu_item:hover
+            background: #fff;
+            transition: all .2s;
+
+            .menu-value
+                color: #303332;

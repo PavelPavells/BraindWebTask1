@@ -1,0 +1,47 @@
+.speisekarte-section
+    width: 1002px;
+
+.speisekarte-section_wrapper
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 81px;
+
+    .speisekarte-row-two-rect
+        display: flex;
+        justify-content: space-between;
+
+        .speisekarte-frame
+            margin-top: 55px;
+            height: 281px;
+            width: 450px;
+            background-color: transparent;
+            padding: 9px 10px 10px 12px;
+            border: 1px solid #f2ab7f;
+
+            .speisekarte-frame-content
+                display: flex;
+                align-items: stretch;
+                height: 260px;
+                width: 426px;
+                background-color: #fff;
+
+                .speisekarte-content_text
+                    margin: 20px 0 15px 15px;
+
+                    .speisekarte-content_text_caption
+                        color: #282729;
+                        font-family: 'GFS Didot', serif;
+                        font-style: italic;
+                        font-size: 24px;
+                        line-height: 39.42px;
+                    
+                    .speisekarte-content_text_body
+                        color: #28272a;
+                        font-family: 'Raleway', Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 21.42px;
+
+                        .speisekarte-content_text_link
+                            @extend .speisekarte-content_text_body;
+                            text-decoration: underline;

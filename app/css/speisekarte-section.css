@@ -1,0 +1,45 @@
+.speisekarte-section {
+  width: 1002px; }
+
+.speisekarte-section_wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 81px; }
+  .speisekarte-section_wrapper .speisekarte-row-two-rect {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .speisekarte-section_wrapper .speisekarte-row-two-rect .speisekarte-frame {
+      margin-top: 55px;
+      height: 281px;
+      width: 450px;
+      background-color: transparent;
+      padding: 9px 10px 10px 12px;
+      border: 1px solid #f2ab7f; }
+      .speisekarte-section_wrapper .speisekarte-row-two-rect .speisekarte-frame .speisekarte-frame-content {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+        height: 260px;
+        width: 426px;
+        background-color: #fff; }
+        .speisekarte-section_wrapper .speisekarte-row-two-rect .speisekarte-frame .speisekarte-frame-content .speisekarte-content_text {
+          margin: 20px 0 15px 15px; }
+          .speisekarte-section_wrapper .speisekarte-row-two-rect .speisekarte-frame .speisekarte-frame-content .speisekarte-content_text .speisekarte-content_text_caption {
+            color: #282729;
+            font-family: 'GFS Didot', serif;
+            font-style: italic;
+            font-size: 24px;
+            line-height: 39.42px; }
+          .speisekarte-section_wrapper .speisekarte-row-two-rect .speisekarte-frame .speisekarte-frame-content .speisekarte-content_text .speisekarte-content_text_body, .speisekarte-section_wrapper .speisekarte-row-two-rect .speisekarte-frame .speisekarte-frame-content .speisekarte-content_text .speisekarte-content_text_body .speisekarte-content_text_link {
+            color: #28272a;
+            font-family: 'Raleway', Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21.42px; }
+            .speisekarte-section_wrapper .speisekarte-row-two-rect .speisekarte-frame .speisekarte-frame-content .speisekarte-content_text .speisekarte-content_text_body .speisekarte-content_text_link {
+              text-decoration: underline; }
