@@ -5,4 +5,4 @@
 ## or download https://github.com/PavelPavells/BraindWebTask1
 
 # npm install
-# gulp
+# run 'gulp'
