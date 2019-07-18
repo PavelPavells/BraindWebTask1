@@ -1,5 +1,13 @@
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; }
+
 body {
-  background-color: #e0dccd; }
+  background-color: #e0dccd;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; }
 
 .wrapper {
   display: -ms-flexbox;
@@ -9,7 +17,9 @@ body {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  width: 100%;
+  overflow: show; }
 
 .header {
   width: 1002px;
