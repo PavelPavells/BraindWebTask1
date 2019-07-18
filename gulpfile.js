@@ -1,13 +1,13 @@
-var gulp       = require('gulp'), // Подключаем Gulp
-    sass         = require('gulp-sass'), //Подключаем Sass пакет,
-    browserSync  = require('browser-sync'), // Подключаем Browser Sync
+const gulp         = require('gulp'), // Подключаем Gulp
+      sass         = require('gulp-sass'), //Подключаем Sass пакет,
+      browserSync  = require('browser-sync'), // Подключаем Browser Sync
 //    cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
 //    rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
 //    del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
 //    imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
 //    pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 //    cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
-    autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
+      autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 gulp.task('sass', function() { // Создаем таск Sass
     return gulp.src('app/sass/**/*.sass') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
@@ -24,7 +24,10 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     });
 });
 gulp.task('code', function() {
-    return gulp.src('app/*.html')
+    return gulp.src([
+        'app/*.html', 
+        'app/scripts/**/*.js'
+    ])
     .pipe(browserSync.reload({ stream: true }))
 });
 //gulp.task('css-libs', function() {
@@ -62,7 +65,8 @@ gulp.task('code', function() {
 // })
 gulp.task('watch', function() {
     gulp.watch('app/sass/**/*.sass', gulp.parallel('sass')); // Наблюдение за sass файлами
-    gulp.watch('app/*.html', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
+    gulp.watch('app/*.html', gulp.parallel('code'));
+    gulp.watch('app/scripts/*.js', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
 });
 gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
 //gulp.task('build', gulp.parallel('prebuild', 'clean', 'img', 'sass')); // Для Build
