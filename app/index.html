@@ -35,9 +35,9 @@
                 <p class="banner-section_telephone">Telefonische Reservierungen: +43 1 406 59 13 </p>
             </div>
             <div class="banner-section_slider_wrapper">
-                <img class="banner-section_slider_button active" src="images/slider_button.png" onclick="currentSlide(1)">
-                <img class="banner-section_slider_button" src="images/slider_button.png" onclick="currentSlide(2)">
-                <img class="banner-section_slider_button" src="images/slider_button.png" onclick="currentSlide(3)">
+                <img class="banner-section_slider_button active" src="images/slider_button.png" onclick="currentWelcomeSlide(1)">
+                <img class="banner-section_slider_button" src="images/slider_button.png" onclick="currentWelcomeSlide(2)">
+                <img class="banner-section_slider_button" src="images/slider_button.png" onclick="currentWelcomeSlide(3)">
             </div> 
             <nav class="banner-section_navigation">
                 <ul class="banner-section_navigation_menu">
@@ -170,21 +170,21 @@
                 <div class="pagination-section">
                     <ul class="aktionen-pagination-section">
                         <li class="aktionen-pagination-section_item">
-                            <a class="aktionen-pagination-section_link active" href="#">
+                            <a class="aktionen-pagination-section_link active" onclick="currentAktionenSlide(1)" href="#">
                                 <div class="frame">
                                     <div class="square"></div>
                                 </div>
                             </a>
                         </li>
                         <li class="aktionen-pagination-section_item">
-                            <a class="aktionen-pagination-section_link" href="#">
+                            <a class="aktionen-pagination-section_link" onclick="currentAktionenSlide(2)" href="#">
                                 <div class="frame">
                                     <div class="square"></div>
                                 </div>
                             </a>
                         </li>
                         <li class="aktionen-pagination-section_item">
-                            <a class="aktionen-pagination-section_link" href="#">
+                            <a class="aktionen-pagination-section_link" onclick="currentAktionenSlide(3)" href="#">
                                 <div class="frame">
                                     <div class="square"></div>
                                 </div>
@@ -318,10 +318,9 @@
                     </form>
                 </div>
                 <div class="kontakt-googlemap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.555387390039!2d16.346019316047112!3d48.215179279229766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d0740639bdce5%3A0x470b3777b4553d23!2scafe+votiv!5e0!3m2!1sru!2sru!4v1563556576108!5m2!1sru!2sru" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>            <div class="white-rectangle"></div>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1z3nEyDsB8W1pJ8vkT2rAetbQXr_U6f8_" width="450" height="300"></iframe>        </section>
                 </div>
-        </section>
-        <section class="footer-section">
+            <section class="footer-section">
             <section class="footer-section_social">
                 <div class="footer-section_social_content">
                     <h1>Become a member of<br/>
@@ -367,5 +366,6 @@
         </section>
     </div>
     <script src="scripts/welcome-slider.js"></script>
+    <script src="scripts/aktionen-slider.js"></script>
 </body>
 </html>
