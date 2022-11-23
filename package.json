@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/PavelPavells/BraindWebTask1#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "del": "^5.0.0",
     "flexbox": "0.0.3",
     "gulp": "^4.0.2",
